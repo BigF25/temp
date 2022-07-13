@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="USBCamera.exe" size="30232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="USBCamera.exe" size="33304">
       <assemblyIdentity name="USBCamera" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KR9ePvx4OjOfad21oYTzpvfN8/ZpyUWB7DJ1Ld2Vqso=</dsig:DigestValue>
+        <dsig:DigestValue>wd1fLi3iu9GUiX9v0HWF8HWPWQzP3JNBIUJVfhlkgdE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

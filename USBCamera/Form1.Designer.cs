@@ -68,6 +68,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.TotalTimeCost = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.cube500Process = new System.Diagnostics.Process();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -121,45 +122,45 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(92, 192);
+            this.label1.Location = new System.Drawing.Point(83, 192);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 22);
+            this.label1.Size = new System.Drawing.Size(104, 22);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Camera1";
+            this.label1.Text = "Camera Up";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(346, 192);
+            this.label2.Location = new System.Drawing.Point(329, 192);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 22);
+            this.label2.Size = new System.Drawing.Size(129, 22);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Camera2";
+            this.label2.Text = "Camera Down";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(92, 362);
+            this.label3.Location = new System.Drawing.Point(83, 362);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 22);
+            this.label3.Size = new System.Drawing.Size(98, 22);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Camera3";
+            this.label3.Text = "Camera In";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(346, 362);
+            this.label4.Location = new System.Drawing.Point(329, 362);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 22);
+            this.label4.Size = new System.Drawing.Size(112, 22);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Camera4";
+            this.label4.Text = "Camera Out";
             // 
             // pictureBox1
             // 
@@ -524,6 +525,18 @@
             this.label17.TabIndex = 24;
             this.label17.Text = "Total:";
             // 
+            // cube500Process
+            // 
+            this.cube500Process.StartInfo.Domain = "";
+            this.cube500Process.StartInfo.FileName = ".\\cube500\\cube500sCN.exe";
+            this.cube500Process.StartInfo.LoadUserProfile = false;
+            this.cube500Process.StartInfo.Password = null;
+            this.cube500Process.StartInfo.StandardErrorEncoding = null;
+            this.cube500Process.StartInfo.StandardOutputEncoding = null;
+            this.cube500Process.StartInfo.UserName = "";
+            this.cube500Process.StartInfo.UseShellExecute = false;
+            this.cube500Process.SynchronizingObject = this;
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -596,6 +609,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label TotalTimeCost;
         private System.Windows.Forms.Label label17;
+        private System.Diagnostics.Process cube500Process;
     }
 }
 
