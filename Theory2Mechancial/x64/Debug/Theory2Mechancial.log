@@ -1,0 +1,4 @@
+﻿  Theory2Mechancial.cpp
+h:\机器人\项目\cube robot\2.software\第2代\cuberobot\theory2mechancial\theory2mechancial.cpp(42): warning C4326: “main”的返回类型应为“int”而非“void”
+h:\机器人\项目\cube robot\2.software\第2代\cuberobot\theory2mechancial\theory2mechancial.cpp(64): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Theory2Mechancial.vcxproj -> H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\x64\Debug\Theory2Mechancial.exe

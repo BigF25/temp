@@ -56,10 +56,13 @@
             this.COM_ComboBox = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.SerialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.label10 = new System.Windows.Forms.Label();
             this.Main_Start = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.MoveTimeCost = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.CalcTimeCost = new System.Windows.Forms.Label();
@@ -69,6 +72,8 @@
             this.TotalTimeCost = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.cube500Process = new System.Diagnostics.Process();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -76,6 +81,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // videoSourcePlayer1
@@ -173,7 +179,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -339,7 +345,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(13, 440);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(602, 92);
+            this.groupBox2.Size = new System.Drawing.Size(611, 92);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Com-Related";
@@ -379,7 +385,7 @@
             this.COM_ComboBox.Name = "COM_ComboBox";
             this.COM_ComboBox.Size = new System.Drawing.Size(110, 32);
             this.COM_ComboBox.TabIndex = 23;
-            this.COM_ComboBox.DropDown += new System.EventHandler(this.comboBox1_DropDown);
+            this.COM_ComboBox.DropDown += new System.EventHandler(this.ComboBox1_DropDown);
             // 
             // label19
             // 
@@ -401,9 +407,9 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "COM:";
             // 
-            // serialPort1
+            // SerialPort1
             // 
-            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
+            this.SerialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.SerialPort1_DataReceived);
             // 
             // label10
             // 
@@ -417,18 +423,23 @@
             // 
             // Main_Start
             // 
+            this.Main_Start.BackColor = System.Drawing.Color.LightCoral;
             this.Main_Start.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Main_Start.Location = new System.Drawing.Point(620, 440);
+            this.Main_Start.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Main_Start.Location = new System.Drawing.Point(833, 447);
             this.Main_Start.Margin = new System.Windows.Forms.Padding(2);
             this.Main_Start.Name = "Main_Start";
             this.Main_Start.Size = new System.Drawing.Size(100, 100);
             this.Main_Start.TabIndex = 25;
             this.Main_Start.Text = "START";
-            this.Main_Start.UseVisualStyleBackColor = true;
+            this.Main_Start.UseVisualStyleBackColor = false;
             this.Main_Start.Click += new System.EventHandler(this.Main_Start_Click);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.richTextBox1);
+            this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.MoveTimeCost);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.CalcTimeCost);
@@ -440,10 +451,40 @@
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(13, 545);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(698, 122);
+            this.groupBox3.Size = new System.Drawing.Size(948, 158);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resolve-Related";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(208, 115);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(31, 35);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "0";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(661, 33);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(261, 116);
+            this.richTextBox1.TabIndex = 27;
+            this.richTextBox1.Text = "";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 114);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 35);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Num:";
             // 
             // MoveTimeCost
             // 
@@ -528,7 +569,7 @@
             // cube500Process
             // 
             this.cube500Process.StartInfo.Domain = "";
-            this.cube500Process.StartInfo.FileName = ".\\cube500\\cube500sCN.exe";
+            this.cube500Process.StartInfo.FileName = "./cube500/cube500sCN.exe";
             this.cube500Process.StartInfo.LoadUserProfile = false;
             this.cube500Process.StartInfo.Password = null;
             this.cube500Process.StartInfo.StandardErrorEncoding = null;
@@ -537,12 +578,34 @@
             this.cube500Process.StartInfo.UseShellExecute = false;
             this.cube500Process.SynchronizingObject = this;
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.richTextBox2.Location = new System.Drawing.Point(23, 44);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.Size = new System.Drawing.Size(133, 35);
+            this.richTextBox2.TabIndex = 28;
+            this.richTextBox2.Text = "";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.richTextBox2);
+            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(637, 440);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(174, 91);
+            this.groupBox4.TabIndex = 26;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Error";
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(973, 680);
+            this.ClientSize = new System.Drawing.Size(973, 715);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.Main_Start);
             this.Controls.Add(this.label10);
@@ -563,6 +626,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -594,7 +658,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label9;
-        private System.IO.Ports.SerialPort serialPort1;
+        private System.IO.Ports.SerialPort SerialPort1;
         private System.Windows.Forms.ComboBox COM_ComboBox;
         private System.Windows.Forms.ComboBox Baud_ComboBox;
         private System.Windows.Forms.Button COM_Btn;
@@ -610,6 +674,11 @@
         private System.Windows.Forms.Label TotalTimeCost;
         private System.Windows.Forms.Label label17;
         private System.Diagnostics.Process cube500Process;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 

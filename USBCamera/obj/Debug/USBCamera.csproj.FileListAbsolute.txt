@@ -38,25 +38,14 @@ H:\机器人\项目\第二次魔方\2.software\CubeRobot\USBCamera\obj\Debug\USB
 H:\机器人\项目\第二次魔方\2.software\CubeRobot\USBCamera\obj\Debug\USBCamera.exe
 H:\机器人\项目\第二次魔方\2.software\CubeRobot\USBCamera\obj\Debug\USBCamera.pdb
 H:\机器人\项目\第二次魔方\2.software\CubeRobot\USBCamera\obj\Debug\USBCamera.Main_Form.resources
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\USBCamera.exe.config
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\USBCamera.exe.manifest
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\USBCamera.application
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\USBCamera.exe
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\USBCamera.pdb
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Controls.dll
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.dll
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Imaging.dll
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Math.dll
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Video.DirectShow.dll
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Video.dll
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.xml
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Controls.xml
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Imaging.xml
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Math.xml
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Video.xml
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\bin\Debug\AForge.Video.DirectShow.xml
+H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\bridge\USBCamera.exe.config
+H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\bridge\USBCamera.exe.manifest
+H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\bridge\USBCamera.application
+H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\bridge\USBCamera.exe
+H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\bridge\USBCamera.pdb
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.csprojAssemblyReference.cache
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.Main_Form.resources
+H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.Form2.resources
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.Properties.Resources.resources
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.csproj.GenerateResource.cache
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.csproj.CoreCompileInputs.cache
@@ -65,4 +54,3 @@ H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.csproj.CopyComplete
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.exe
 H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.pdb
-H:\机器人\项目\Cube Robot\2.software\第2代\CubeRobot\USBCamera\obj\Debug\USBCamera.Form2.resources
